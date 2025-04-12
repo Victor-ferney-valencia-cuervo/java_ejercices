@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class CalculadoraFormas {
+    
+    // Método para calcular el área de un triángulo
+    public static double calcularAreaTriangulo(double base, double altura) {
+        return (base * altura) / 2;
+    }
+
+    // Método para calcular el área de un rectángulo
+    public static double calcularAreaRectangulo(double base, double altura) {
+        return base * altura;
+    }
+
+    // Método para calcular el área de un círculo
+    public static double calcularAreaCirculo(double radio) {
+        return Math.PI * radio * radio;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+// pedir le al usuario que figura quiere calcular
+        System.out.println("Que figura deseas calcular?");
+        System.out.println("1. Triangulo");
+        System.out.println("2. Rectangulo");
+        System.out.println("3. Circulo");
+        System.out.print("Ingresa el número de la opcion: ");
+        int opcion = sc.nextInt();
+
+        double area = 0;
+
+        switch (opcion) {
+            case 1:
+                System.out.print("Introduce la base del triangulo: ");
+                double baseTriangulo = sc.nextDouble();
+                System.out.print("Introduce la altura del triangulo: ");
+                double alturaTriangulo = sc.nextDouble();
+                area = calcularAreaTriangulo(baseTriangulo, alturaTriangulo);
+                System.out.println("El área del triangulo es: " + area);
+                break;
+
+            case 2:
+                System.out.print("Introduce la base del rectangulo: ");
+                double baseRectangulo = sc.nextDouble();
+                System.out.print("Introduce la altura del rectangulo: ");
+                double alturaRectangulo = sc.nextDouble();
+                area = calcularAreaRectangulo(baseRectangulo, alturaRectangulo);
+                System.out.println("El area del rectangulo es: " + area);
+                break;
+
+            case 3:
+                System.out.print("Introduce el radio del carculo: ");
+                double radio = sc.nextDouble();
+                area = calcularAreaCirculo(radio);
+                System.out.println("El área del circulo es: " + area);
+                break;
+
+            default:
+                System.out.println("Opción no válida.");
+        }
+
+        sc.close();
+    }
+}
