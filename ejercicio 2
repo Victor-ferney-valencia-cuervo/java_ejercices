@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class DatosUsuario {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Introduce tu nombre: ");
+        String nombre = sc.nextLine();
+
+        System.out.print("Introduce tu edad: ");
+        int edad = sc.nextInt();
+        sc.nextLine();
+        
+        System.out.print("Introduce tu correo electrónico: ");
+        String correo = sc.nextLine();
+
+        System.out.println("\nDatos ingresados:");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+        System.out.println("Correo: " + correo);
+
+        sc.close();
+    }
+}
