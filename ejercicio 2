@@ -11,7 +11,7 @@ public class DatosUsuario {
         int edad = sc.nextInt();
         sc.nextLine();
         
-        System.out.print("Introduce tu correo electrónico: ");
+        System.out.print("Introduce tu correo electronico: ");
         String correo = sc.nextLine();
 
         System.out.println("\nDatos ingresados:");
