@@ -1,24 +1,28 @@
-import java.util.Scanner;
+import java.util.Scanner; // Importamos la clase Scanner para leer entrada del usuario
 
 public class DatosUsuario {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); // Creamos el objeto Scanner
 
+        // Solicitamos al usuario que introduzca su nombre
         System.out.print("Introduce tu nombre: ");
-        String nombre = sc.nextLine();
+        String nombre = sc.nextLine(); // Leemos el nombre completo como una cadena de texto
 
+        // Solicitamos la edad
         System.out.print("Introduce tu edad: ");
-        int edad = sc.nextInt();
-        sc.nextLine();
-        
-        System.out.print("Introduce tu correo electronico: ");
-        String correo = sc.nextLine();
+        int edad = sc.nextInt(); // Leemos la edad como entero
+        sc.nextLine(); // Limpiamos el buffer del scanner (necesario después de nextInt)
 
+        // Solicitamos el correo electrónico
+        System.out.print("Introduce tu correo electronico: ");
+        String correo = sc.nextLine(); // Leemos el correo como una cadena
+
+        // Mostramos los datos ingresados
         System.out.println("\nDatos ingresados:");
         System.out.println("Nombre: " + nombre);
         System.out.println("Edad: " + edad);
         System.out.println("Correo: " + correo);
 
-        sc.close();
+        sc.close(); // Cerramos el scanner
     }
 }
