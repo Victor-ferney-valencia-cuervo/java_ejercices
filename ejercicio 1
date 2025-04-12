@@ -1,28 +1,32 @@
-import java.util.Scanner;
+import java.util.Scanner; // Importamos la clase Scanner para poder leer datos desde el teclado
 
 public class OperacionesBasicas {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); // Creamos un objeto Scanner para leer la entrada del usuario
 
+        // Pedimos al usuario que introduzca el primer número
         System.out.print("Introduce el primer numero: ");
-        double num1 = sc.nextDouble();
+        double num1 = sc.nextDouble(); // Leemos el primer número
 
+        // Pedimos al usuario que introduzca el segundo número
         System.out.print("Introduce el segundo numero: ");
-        double num2 = sc.nextDouble();
+        double num2 = sc.nextDouble(); // Leemos el segundo número
 
-        double suma = num1 + num2;
-        double resta = num1 - num2;
-        double multiplicacion = num1 * num2;
-        double division = (num2 != 0) ? num1 / num2 : Double.NaN;
-        double modulo = (num2 != 0) ? num1 % num2 : Double.NaN;
-
+        // Realizamos las operaciones básicas
+        double suma = num1 + num2; 
+        double resta = num1 - num2; 
+        double multiplicacion = num1 * num2; 
+        double division = (num2 != 0) ? num1 / num2 : Double.NaN; 
+        double modulo = (num2 != 0) ? num1 % num2 : Double.NaN; 
+        // Mostramos los resultados
         System.out.println("\nResultados:");
         System.out.println("Suma: " + suma);
         System.out.println("Resta: " + resta);
         System.out.println("Multiplicacion: " + multiplicacion);
+        // Mostramos mensaje personalizado si el divisor es cero
         System.out.println("Division: " + (num2 != 0 ? division : "No se puede dividir por cero"));
         System.out.println("Modulo: " + (num2 != 0 ? modulo : "No se puede calcular el modulo con divisor cero"));
 
-        sc.close();
+        sc.close(); // Cerramos el Scanner para liberar recursos
     }
 }
