@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class CalculadoraFormas {
-    
     // Método para calcular el área de un triángulo
     public static double calcularAreaTriangulo(double base, double altura) {
         return (base * altura) / 2;
