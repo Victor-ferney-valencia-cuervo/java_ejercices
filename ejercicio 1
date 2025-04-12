@@ -21,7 +21,7 @@ public class OperacionesBasicas {
         System.out.println("Resta: " + resta);
         System.out.println("Multiplicacion: " + multiplicacion);
         System.out.println("Division: " + (num2 != 0 ? division : "No se puede dividir por cero"));
-        System.out.println("Modulo: " + (num2 != 0 ? modulo : "No se puede calcular el módulo con divisor cero"));
+        System.out.println("Modulo: " + (num2 != 0 ? modulo : "No se puede calcular el modulo con divisor cero"));
 
         sc.close();
     }
