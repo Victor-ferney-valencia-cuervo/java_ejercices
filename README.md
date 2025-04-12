@@ -1,6 +1,5 @@
 # ejercicio 1
 
-
 import java.util.Scanner;
 
 public class OperacionesBasicas {
@@ -29,3 +28,5 @@ public class OperacionesBasicas {
         sc.close();
     }
 }
+
+
